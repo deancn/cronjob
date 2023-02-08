@@ -3,7 +3,8 @@ name: Message Notify
 on:
   schedule:
     # Runs "at minute 55 past every hour" (see https://crontab.guru)
-    - cron: '59 11 * * 1-5'
+    # Github action run as timezone utc 0. (target time - 8 hour.)
+    - cron: '59 03 * * 1-5'
 
 jobs:
   build:
