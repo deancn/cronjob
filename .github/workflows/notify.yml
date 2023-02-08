@@ -16,4 +16,4 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       uses: Ilshidur/action-discord@master
       with:
-        args: "[test] Hi friends, let's go to lunch now.... Be quick."
+        args: "@everyone Hi friends, let's go to lunch now.... Be quick."
